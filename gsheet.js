@@ -22,7 +22,7 @@ export async function appendDataToSheet() {
 
     // Criar uma instância do Google Sheets
     const sheets = google.sheets({ version: 'v4', auth: client });
-    var dateTime=new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '');
+    var dateTime=new Date().toLocaleString("pt-BR",{timeZone:"America/Sao_Paulo"}).replace(/,/, '');
     // Dados que você deseja adicionar
     const request = {
       spreadsheetId: SHEET_ID,

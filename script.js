@@ -1,6 +1,6 @@
 async function msg(id) {
     event.preventDefault();
-    console.log("clicado",id.replace("_"," "));
+    //console.log("clicado",id.replace("_"," "));
     await fetch('/send-gsheet',{
         method: 'POST',
         headers: {'Content-Type': 'application/json'},

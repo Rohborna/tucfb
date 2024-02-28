@@ -19,7 +19,5 @@ console.log("dir",__dirname);
 app.listen(8077,function(){console.log('Servidor iniciado');});
 
 app.post("/send-gsheet/", function(req,res){
-    console.log(req.body.id)
-    res.send(req.body)
     appendDataToSheet(req.body.id);
 });

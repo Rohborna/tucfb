@@ -41,6 +41,3 @@ export async function appendDataToSheet(id) {
     console.error('Erro ao adicionar dados à planilha:', error.message);
   }
 }
-
-// Chamar a função para adicionar dados à planilha
-// appendDataToSheet();

@@ -3,13 +3,41 @@
     <head>
         <meta charset="utf-8">
         <title>Registro de Horarios</title>
+        <link rel="stylesheet" href="/style.css">
     </head>
     <body>
-    <form>
-        <h1>Registro de Horarios</h1>
-        <button onclick="msg()" type="submit">Inicio Abertura</button>
-    </form>
-        <!-- <link rel="script" href="./script.js"/> -->
-        <script type="text/javascript" src="./script.js"></script>
+        <h1>Registro de Horários</h1>
+        <fieldset>
+            <legend>
+               Abertura
+            </legend>
+            <button onclick="msg(this.id)" type="submit" class="inicio" id="Inicio_Abertura">Inicio Abertura</button>
+            <button onclick="msg(this.id)" type="submit" id="Fim_Abertura">Fim Abertura</button>
+         </fieldset>
+
+         <fieldset>
+            <legend>
+               Atendimento
+            </legend>
+            <button onclick="msg(this.id)" type="submit" class="inicio" id="Inicio_Atendimento">Inicio Atendimento</button>
+            <button onclick="msg(this.id)" type="submit" id="Fim_Atendimento">Fim Atendimento</button>
+         </fieldset>
+
+         <fieldset>
+            <legend>
+               Encerramento
+            </legend>
+            <button onclick="msg(this.id)" type="submit" class="inicio" id="Inicio_Encerramento">Inicio Encerramento</button>
+            <button onclick="msg(this.id)" type="submit" id="Fim_Encerramento">Fim Encerramento</button>
+         </fieldset>
+
+         <fieldset>
+            <legend>
+               Saida
+            </legend>
+            <button onclick="msg(this.id)" type="submit" id="Saida_Terreiro">Saida Terreiro</button>
+         </fieldset>
+
+         <script type="text/javascript" src="./script.js"></script>
     </body>
 </html>

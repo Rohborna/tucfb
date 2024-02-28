@@ -7,7 +7,7 @@ const SHEET_ID = '1VBTeNnmWbacUyouSZz7f5h8j6ixRFPKhseG0gWBSuPw';
 
 
 // Função para adicionar dados a uma planilha do Google Sheets
-export async function appendDataToSheet() {
+export async function appendDataToSheet(id) {
   try {
     // Configurar o cliente JWT (JSON Web Token) para autenticação
     const client = new google.auth.JWT(
@@ -29,7 +29,7 @@ export async function appendDataToSheet() {
       range: 'raw', // Intervalo onde deseja adicionar os dados
       valueInputOption: 'RAW',
       resource: {
-        values: [[ dateTime, 'Inicio Abertura']], // Os dados que você deseja adicionar
+        values: [[ dateTime, id.replace("_"," ")]], // Os dados que você deseja adicionar
       },
     };
 
